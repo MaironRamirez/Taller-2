@@ -23,6 +23,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    visibility: hidden;
+}
+
+.Overlay.Active{
+    visibility: visible;
 }
 
 .PopUp{
@@ -33,6 +38,27 @@
     padding: 20px;
     text-align: center;
     width: 400px;
+}
+
+.PopUp H2{
+    font-size: 30px;
+}
+
+.PopUp form .Lista{
+    width: 100%;
+    margin-bottom: 20px;
+    line-height: 52px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.PopUp form .btn-submit{
+    width: 60px;
+}
+.PopUp form .btn-submit:hover{
+    transform: scale(1.15);
 }
 
 .PopUp .btn-cerrar-PopUp{
@@ -48,8 +74,6 @@
 .Cerrar:hover{
     transform: scale(1.15);
 }
-
-
 
 .PopUp form .contenedor-input input{
     width: 100%;

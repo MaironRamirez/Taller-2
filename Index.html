@@ -10,18 +10,53 @@
 <body>
     <H1 class="Titulo1">Taller Multimedia</H1>
     <div class="Acciones">
-        <img src="Recursos/Simbolo Agregar.png" alt="Agregar" class="SimboloA"> 
-        <img src="Recursos/Simbolo Modificar.png" alt="Modificar" class="SimboloM">
-        <img src="Recursos/Simbolo Eliminar.png" alt="Eliminar" class="SimboloE">
+        <a href="#" id="Agregar"><img src="Recursos/Simbolo Agregar.png" alt="Agregar" class="SimboloA"></a> 
+        <a href="#" id="Modificar"><img src="Recursos/Simbolo Modificar.png" alt="Modificar" class="SimboloM"></a>
+        <a href="#" id="Eliminar"><img src="Recursos/Simbolo Eliminar.png" alt="Eliminar" class="SimboloE"></a>
     </div>
-    <div class="Overlay">
-        <div class="PopUp">
+    <div class="Overlay" id="Overlay">
+        <div class="PopUp" id="popup">
             <a href="#" id="btn-cerrar-PopUp" class="btn-cerrar-PopUp"><img src="Recursos/Cerrar.png" alt="Cerrar" class="Cerrar"></a>
             <H2>Agregar Tema</H2>
             <form action="">
                 <div class="contenedor-input">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Descripción">
                     <input type="text" placeholder="Codigo">
-                    <input type="text" placeholder="Descripcion">
+                </div>
+                <input type="submit" class="btn-submit" value="Guardar">
+            </form>
+        </div>
+    </div>
+    <div class="Overlay" id="Overlay2">
+        <div class="PopUp" id="popup2">
+            <a href="#" id="btn-cerrar-PopUp2" class="btn-cerrar-PopUp"><img src="Recursos/Cerrar.png" alt="Cerrar" class="Cerrar"></a>
+            <H2>Modificar tema</H2>
+            <form action="">
+                <div class="contenedor-input">
+                    <select class="Lista">
+                        <option disabled selected>Seleccione el tema que desea modificar</option>
+                        <option>Tema 1</option>
+                        <option>Tema 2</option>
+                    </select>
+                    <input type="text" placeholder="Codigo del tema">
+                </div>
+                <input type="submit" class="btn-submit" value="Guardar">
+            </form>
+        </div>
+    </div>
+    <div class="Overlay" id="Overlay3">
+        <div class="PopUp" id="popup3">
+            <a href="#" id="btn-cerrar-PopUp3" class="btn-cerrar-PopUp"><img src="Recursos/Cerrar.png" alt="Cerrar" class="Cerrar"></a>
+            <H2>Eliminar tema</H2>
+            <form action="">
+                <div class="contenedor-input">
+                    <select class="Lista">
+                        <option disabled selected>Seleccione el tema que desea eliminar</option>
+                        <option>Tema 1</option>
+                        <option>Tema 2</option>
+                    </select>
+                    <input type="text" placeholder="Codigo del tema">
                 </div>
                 <input type="submit" class="btn-submit" value="Guardar">
             </form>
@@ -35,5 +70,6 @@
             </p>
         </div>
     </details>
+    <script src="Js/Logica.js"></script>
 </body>
 </html>
